@@ -1,0 +1,16 @@
+{
+  "name": "node-weather",
+  "version": "1.0.0",
+  "description": "Permet de créer une adress en ligne de commande avec longitude / latitude qui renverra la météo du point donné",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "request": "^2.81.0",
+    "yargs": "^7.1.0"
+  }
+}

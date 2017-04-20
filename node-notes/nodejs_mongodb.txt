@@ -1,0 +1,56 @@
+Node est un environnement d'éxécution basé sur le moteur javascript de chrome
+Node permet de céer des serveurs (ftp, smtp, ssh, http, etc)
+Permet des créer des applications réseau (ouverture de port, application)
+fonctions synchrones ou asynchrones
+
+commande node > enter
+2+2
+var test = () => console.log('test')
+syntaxe ES6
+
+npmjs.org (librairies)
+
+Syntaxe ES6
+exécuter programme => node app.js
+
+npm init (à la racine de l'application pour créer le fichier de dépendances package.json)
+https://www.npmjs.com/package/lodash
+$ npm install lodash --save (l'argument --save enregistre la dépendance dans package.json)
+(install lodash)
+
+$ npm uninstall lodash --save (l'argument --save enregistre la dépendance dans package.json)
+(d�sinstall)
+
+node app.js add --title="mangez des pates"
+// lib yargs pour récup les arguments en ligne de commande
+npm install yargs --save
+
+installer nodemon (monitoring)
+-g (mode global pour tous les projets)
+npm i nodemon -g
+utilisation: nodemon playground/json.js
+ctrl C pour exit
+
+Outils de debug
+nodeinspector chrome (en cours de réparation...)
+ou
+node debug playground/json.js
+n + entrée (passer à la ligne suivante)
+debugger dans le code = breakpoint
+c + entrée (continue jusqu'au prochain breakpoint)
+repl => prompt mode pour obtenir le contenu des variables par exemple
+
+
+Déploiement d'une appli node (compte github et hiroku)
+
+téléchargement de git (git-scm.com -> contrôle de version)
+git init (crée le dossier .git dans le dossier local à déployer)
+git status
+git add server.js (dire à git de surveiller le fichier server.js)
+git add . (dire à git de surveiller tous les fichiers)
+création d'un fichier .gitignore pour dire à git d'exclure un dossier / fichier de la surveillance
+git commit -m "initial commit" (premier commit dans la branche master => photogrpahie de l'état des fichiers à l'instant t)
+git commit -am "autre commit" (nouveau commit)
+création du repo dans github
+création d'une clef ssh sous linux (pbcopy < ~/.ssh/id_rsa.pub)
+création de la clef dans github (copier / coller dans https://github.com/settings/keys)
