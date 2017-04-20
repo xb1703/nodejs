@@ -6,6 +6,8 @@ const fs = require('fs');
 
 const express = require('express');
 const hbs = require('hbs');
+
+const port = process.env.PORT || 3000;
 const app = express();
 
 
@@ -70,7 +72,7 @@ app.get('/bad', (req, res) => {
 });
 
 
-var server = app.listen(3000, () => {
+var server = app.listen(port, () => {
   console.log('Serveur écoutant sur le port 3000');
 });
 
